@@ -6,9 +6,8 @@ pool:
 
 stages:
 
-# ---------------- CI STAGE ----------------
+# ---------------- CI ----------------
 - stage: Build
-  displayName: Build and Test
   jobs:
   - job: BuildJob
     steps:
@@ -19,25 +18,21 @@ stages:
         version: '8.x'
 
     - task: DotNetCoreCLI@2
-      displayName: Restore
       inputs:
         command: restore
         projects: '**/*.csproj'
 
     - task: DotNetCoreCLI@2
-      displayName: Build
       inputs:
         command: build
         projects: '**/*.csproj'
 
     - task: DotNetCoreCLI@2
-      displayName: Test
       inputs:
         command: test
         projects: '**/*.csproj'
 
     - task: DotNetCoreCLI@2
-      displayName: Publish
       inputs:
         command: publish
         publishWebProjects: true
@@ -46,23 +41,55 @@ stages:
     - task: PublishBuildArtifacts@1
       inputs:
         PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-        ArtifactName: 'drop'
+        ArtifactName: drop
 
 
-# ---------------- CD STAGE ----------------
-- stage: Deploy
-  displayName: Deploy to Azure App Service
+# ---------------- DEV ----------------
+- stage: Dev
   dependsOn: Build
   jobs:
-  - deployment: DeployWeb
+  - deployment: DeployDev
     environment: dev
     strategy:
       runOnce:
         deploy:
           steps:
-
           - task: AzureWebApp@1
             inputs:
               azureSubscription: 'Azure-Service-Connection'
               appName: 'dotnetwebapp-sushr'
+              package: '$(Pipeline.Workspace)/drop/**/*.zip'
+
+
+# ---------------- STAGING ----------------
+- stage: Staging
+  dependsOn: Dev
+  jobs:
+  - deployment: DeployStaging
+    environment: staging
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - task: AzureWebApp@1
+            inputs:
+              azureSubscription: 'Azure-Service-Connection'
+              appName: 'dotnetwebapp-staging'
+              package: '$(Pipeline.Workspace)/drop/**/*.zip'
+
+
+# ---------------- PRODUCTION ----------------
+- stage: Production
+  dependsOn: Staging
+  jobs:
+  - deployment: DeployProd
+    environment: production
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - task: AzureWebApp@1
+            inputs:
+              azureSubscription: 'Azure-Service-Connection'
+              appName: 'dotnetwebapp-prod'
               package: '$(Pipeline.Workspace)/drop/**/*.zip'
