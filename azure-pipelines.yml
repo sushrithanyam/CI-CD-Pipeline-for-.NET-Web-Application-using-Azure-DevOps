@@ -8,17 +8,26 @@ steps:
 
 - task: UseDotNet@2
   inputs:
-    packageType: sdk
+    packageType: 'sdk'
     version: '8.x'
 
+# Restore solution
 - task: DotNetCoreCLI@2
+  displayName: Restore
   inputs:
-    command: restore
+    command: 'restore'
+    projects: '**/*.csproj'
 
+# Build solution
 - task: DotNetCoreCLI@2
+  displayName: Build
   inputs:
-    command: build
+    command: 'build'
+    projects: '**/*.csproj'
 
+# Run tests
 - task: DotNetCoreCLI@2
+  displayName: Test
   inputs:
-    command: test
+    command: 'test'
+    projects: '**/*.csproj'
