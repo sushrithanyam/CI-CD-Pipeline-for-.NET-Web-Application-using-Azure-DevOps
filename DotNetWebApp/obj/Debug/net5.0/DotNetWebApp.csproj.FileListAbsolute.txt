@@ -5,7 +5,6 @@ C:\Users\sushr\DotNet-CICD\DotNetWebApp\bin\Debug\net5.0\DotNetWebApp.deps.json
 C:\Users\sushr\DotNet-CICD\DotNetWebApp\bin\Debug\net5.0\DotNetWebApp.runtimeconfig.json
 C:\Users\sushr\DotNet-CICD\DotNetWebApp\bin\Debug\net5.0\DotNetWebApp.runtimeconfig.dev.json
 C:\Users\sushr\DotNet-CICD\DotNetWebApp\bin\Debug\net5.0\DotNetWebApp.dll
-C:\Users\sushr\DotNet-CICD\DotNetWebApp\bin\Debug\net5.0\ref\DotNetWebApp.dll
 C:\Users\sushr\DotNet-CICD\DotNetWebApp\bin\Debug\net5.0\DotNetWebApp.pdb
 C:\Users\sushr\DotNet-CICD\DotNetWebApp\bin\Debug\net5.0\DotNetWebApp.Views.dll
 C:\Users\sushr\DotNet-CICD\DotNetWebApp\bin\Debug\net5.0\DotNetWebApp.Views.pdb
@@ -18,7 +17,6 @@ C:\Users\sushr\DotNet-CICD\DotNetWebApp\obj\Debug\net5.0\DotNetWebApp.MvcApplica
 C:\Users\sushr\DotNet-CICD\DotNetWebApp\obj\Debug\net5.0\DotNetWebApp.RazorAssemblyInfo.cache
 C:\Users\sushr\DotNet-CICD\DotNetWebApp\obj\Debug\net5.0\DotNetWebApp.RazorAssemblyInfo.cs
 C:\Users\sushr\DotNet-CICD\DotNetWebApp\obj\Debug\net5.0\staticwebassets\DotNetWebApp.StaticWebAssets.Manifest.cache
-C:\Users\sushr\DotNet-CICD\DotNetWebApp\obj\Debug\net5.0\staticwebassets\DotNetWebApp.StaticWebAssets.xml
 C:\Users\sushr\DotNet-CICD\DotNetWebApp\obj\Debug\net5.0\scopedcss\bundle\DotNetWebApp.styles.css
 C:\Users\sushr\DotNet-CICD\DotNetWebApp\obj\Debug\net5.0\DotNetWebApp.TagHelpers.input.cache
 C:\Users\sushr\DotNet-CICD\DotNetWebApp\obj\Debug\net5.0\DotNetWebApp.TagHelpers.output.cache
@@ -37,4 +35,12 @@ C:\Users\sushr\DotNet-CICD\DotNetWebApp\obj\Debug\net5.0\DotNetWebApp.dll
 C:\Users\sushr\DotNet-CICD\DotNetWebApp\obj\Debug\net5.0\ref\DotNetWebApp.dll
 C:\Users\sushr\DotNet-CICD\DotNetWebApp\obj\Debug\net5.0\DotNetWebApp.pdb
 C:\Users\sushr\DotNet-CICD\DotNetWebApp\obj\Debug\net5.0\DotNetWebApp.genruntimeconfig.cache
-C:\Users\sushr\DotNet-CICD\DotNetWebApp\obj\Debug\net5.0\DotNetWebApp.csproj.CopyComplete
+C:\Users\sushr\DotNet-CICD\DotNetWebApp\bin\Debug\net5.0\DotNetWebApp.StaticWebAssets.xml
+C:\Users\sushr\DotNet-CICD\DotNetWebApp\obj\Debug\net5.0\DotNetWebApp.sourcelink.json
+C:\Users\sushr\DotNet-CICD\DotNetWebApp\obj\Debug\net5.0\staticwebassets\DotNetWebApp.StaticWebAssets.Pack.cache
+C:\Users\sushr\DotNet-CICD\DotNetWebApp\obj\Debug\net5.0\staticwebassets\msbuild.DotNetWebApp.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\sushr\DotNet-CICD\DotNetWebApp\obj\Debug\net5.0\staticwebassets\msbuild.build.DotNetWebApp.props
+C:\Users\sushr\DotNet-CICD\DotNetWebApp\obj\Debug\net5.0\staticwebassets\msbuild.buildMultiTargeting.DotNetWebApp.props
+C:\Users\sushr\DotNet-CICD\DotNetWebApp\obj\Debug\net5.0\staticwebassets\msbuild.buildTransitive.DotNetWebApp.props
+C:\Users\sushr\DotNet-CICD\DotNetWebApp\obj\Debug\net5.0\refint\DotNetWebApp.dll
+C:\Users\sushr\DotNet-CICD\DotNetWebApp\obj\Debug\net5.0\DotNetWe.D3620667.Up2Date
